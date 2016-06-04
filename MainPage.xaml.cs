@@ -167,7 +167,11 @@ namespace PushButton
 
         private const string FORECAST_URL = "https://api.forecast.io/forecast/YOURSECRETOKEN/";
 
-        static string iotHubUri = "YOURHUB.azure-devices.net"; //your connection string
+        /*
+        npm install -g iothub-explorer
+        iothub-explorer "HostName=mvp-iot-central.azure-devices.net;SharedAccessKeyName=mvp-central;SharedAccessKey=lD3xViVpbdxWIeXNybrAi/HYpJnCGJtBQCzax/36QUc=" create <device-name>
+        */
+        static string iotHubUri = "mvp-iot-central.azure-devices.net"; //your connection string
         static string deviceKey = "YOURSECRETTOKENb/asQOPUesD1BmYOURSECRETTOKENlgMKyk="; // your key 
         static string deviceId = "MyDevice"; // your device name 
     }
